@@ -184,3 +184,11 @@ main{padding:28px 0 60px}
   .grid{grid-template-columns:1fr}
   .hero{padding-top:38px}
 }
+.logo-img{
+  width:44px;
+  height:44px;
+  object-fit: cover;
+  border-radius: 10px;
+  display:block;
+  border:1px solid var(--line);
+}
