@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>MOOD – Les Animals</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MOOD est un dispositif artistique et numérique qui cartographie les émotions dans l’espace public.">
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #0e0e10;
+      color: #f5f5f5;
+    }
+    header {
+      padding: 1.2rem 1.5rem 1.5rem;
+      border-bottom: 1px solid #333;
+    }
+    .topbar {
+      max-width: 900px;
+      margin: 0 auto 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    .logo-mark {
+      width: 32px;
+      height: 32px;
+      border-radius: 999px;
+      border: 1px solid #f5f5f5;
+      position: relative;
+      overflow: hidden;
+    }
+    .logo-mark::before,
+    .logo-mark::after {
+      content: "";
+      position: absolute;
+      width: 60%;
+      height: 60%;
+      border-radius: 50%;
+      border: 1px solid #f5f5f5;
+      top: -5px;
+    }
+    .logo-mark::before {
+      left: -4px;
+      transform: rotate(-15deg);
+    }
+    .logo-mark::after {
+      right: -4px;
+      transform: rotate(15deg);
+    }
+    .logo-text-main {
+      font-size: 1rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+    .logo-text-sub {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #b0b0b0;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 1rem;
+      font-size: 0.9rem;
+    }
+    nav a {
+      color: #f5f5f5;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.78rem;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .header-text {
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 1.5rem 1.5rem;
+    }
+    .header-text h1 {
+      font-size: 1.6rem;
+      margin-bottom: 0.4rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+    .header-text p {
+      max-width: 650px;
+      margin: 0.5rem auto 0;
+      font-size: 0.95rem;
+      color: #c4c4c4;
+    }
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 3rem;
+    }
+    section {
+      margin-bottom: 2.5rem;
+      border-left: 1px solid #333;
+      padding-left: 1rem;
+    }
+    h2 {
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      letter-spacing: 0.15em;
+      margin-bottom: 0.8rem;
+      color: #f0f0f0;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 0.5rem 0 0;
+    }
+    li {
+      margin-bottom: 0.4rem;
+      font-size: 0.95rem;
+    }
+    .highlight {
+      font-weight: 600;
+    }
+    .tagline {
+      font-style: italic;
+      font-size: 0.9rem;
+      color: #b0b0b0;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      padding: 1rem 1.5rem 2rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+    @media (max-width: 700px) {
+      .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav ul {
+        flex-wrap: wrap;
+      }
+      main {
+        padding: 1.5rem 1.25rem 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <div class="brand">
+        <div class="logo-mark" aria-hidden="true"></div>
+        <div>
+          <div class="logo-text-main">LES ANIMALS</div>
+          <div class="logo-text-sub">Ingénierie culturelle & projets européens</div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="mood.html">MOOD</a></li>
+          <li><a href="partenaires.html">Partenaires</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-text">
+      <h1>MOOD</h1>
+      <p>
+        Un dispositif artistique et numérique qui transforme les réponses à des questionnaires poétiques
+        en paysages lumineux et en cartographies d’émotions.
+      </p>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Concept</h2>
+      <p class="tagline">
+        Faire de la ville un espace de récit partagé, où chacun laisse une trace sensible, non violente et anonyme.
+      </p>
+      <p>
+        MOOD repose sur un principe simple : répondre à quelques questions brèves, inspirées de la poésie,
+        de la philosophie et de l’expérience quotidienne. Chaque réponse génère un “mood” :
+        une couleur, un halo ou une image, qui s’agrège à celles des autres dans une œuvre collective.
+      </p>
+      <p>
+        Cette œuvre se déploie à la fois dans l’espace public, sous forme d’installations lumineuses ou d’écrans,
+        et en ligne, via une carte des humeurs qui révèle un paysage émotionnel commun.
+      </p>
+    </section>
+
+    <section>
+      <h2>Dispositif</h2>
+      <ul>
+        <li><span class="highlight">Questionnaires poétiques</span> conçus pour différents contextes (ville, école, festival, quartier).</li>
+        <li><span class="highlight">Application web ou mobile</span> qui transforme les réponses en mood visuel.</li>
+        <li><span class="highlight">Installations lumineuses ou écrans</span> qui affichent en temps réel les moods générés.</li>
+        <li><span class="highlight">Cartographie</span> des humeurs sur une carte, à l’échelle d’une ville ou d’un territoire.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Usages</h2>
+      <ul>
+        <li>Dispositif participatif pour <span class="highlight">villes et collectivités</span> (espace public, concertation sensible).</li>
+        <li>Outil d’<span class="highlight">éducation artistique et culturelle</span> en lien avec des établissements scolaires ou universitaires.</li>
+        <li>Expérience pour <span class="highlight">festivals, tiers-lieux, centres d’art</span> souhaitant associer le public à une œuvre collective.</li>
+        <li>Support de <span class="highlight">médiation</span> autour des émotions, du vivre-ensemble, de la place du numérique dans nos vies.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Déploiement</h2>
+      <p>
+        MOOD se met en place sous forme de résidence, de temps fort ou de programme au long cours. Chaque projet
+        est co-construit avec les partenaires locaux : institutions, acteurs culturels, associations, équipes éducatives.
+      </p>
+      <p>
+        Les Animals assure la conception artistique, l’ingénierie du dispositif et la coordination technique,
+        en lien avec les partenaires et les équipes sur le terrain.
+      </p>
+      <p>
+        Pour recevoir un dossier complet ou imaginer une version sur mesure de MOOD, vous pouvez nous contacter :
+        <a href="mailto:contact@les-animals.fr">contact@les-animals.fr</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © Les Animals – MOOD
+  </footer>
+</body>
+</html>
