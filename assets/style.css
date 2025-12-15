@@ -197,8 +197,8 @@ img { max-width: 100%; height: auto; }
 
 /* Logo dans le header */
 .logo-img{
-  width: 62px !important;
-  height: 62px !important;
+  width: 84px !important;
+  height: 84px !important;
   object-fit: contain;
   display: block;
 }
