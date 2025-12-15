@@ -192,3 +192,13 @@ main{padding:28px 0 60px}
   display:block;
   border:1px solid var(--line);
 }
+/* Sécurise toutes les images du site */
+img { max-width: 100%; height: auto; }
+
+/* Logo dans le header */
+.logo-img{
+  width: 42px !important;
+  height: 42px !important;
+  object-fit: contain;
+  display: block;
+}
