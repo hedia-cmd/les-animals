@@ -15,23 +15,90 @@
       color: #f5f5f5;
     }
     header {
-      padding: 3rem 1.5rem 2rem;
-      text-align: center;
+      padding: 1.2rem 1.5rem 1.5rem;
       border-bottom: 1px solid #333;
     }
-    header h1 {
-      margin: 0 0 0.5rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      font-size: 1.3rem;
+    .topbar {
+      max-width: 900px;
+      margin: 0 auto 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
     }
-    header h2 {
-      margin: 0.2rem 0 1rem;
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    .logo-mark {
+      width: 32px;
+      height: 32px;
+      border-radius: 999px;
+      border: 1px solid #f5f5f5;
+      position: relative;
+      overflow: hidden;
+    }
+    .logo-mark::before,
+    .logo-mark::after {
+      content: "";
+      position: absolute;
+      width: 60%;
+      height: 60%;
+      border-radius: 50%;
+      border: 1px solid #f5f5f5;
+      top: -5px;
+    }
+    .logo-mark::before {
+      left: -4px;
+      transform: rotate(-15deg);
+    }
+    .logo-mark::after {
+      right: -4px;
+      transform: rotate(15deg);
+    }
+    .logo-text-main {
+      font-size: 1rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+    .logo-text-sub {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #b0b0b0;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 1rem;
+      font-size: 0.9rem;
+    }
+    nav a {
+      color: #f5f5f5;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.78rem;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .header-text {
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 1.5rem 1.5rem;
+    }
+    .header-text h2 {
+      margin: 0.2rem 0 0.8rem;
       font-weight: 400;
       font-size: 1rem;
       color: #d0d0d0;
     }
-    header p {
+    .header-text p {
       max-width: 650px;
       margin: 0.5rem auto 0;
       font-size: 0.95rem;
@@ -103,11 +170,12 @@
       border-top: 1px solid #222;
     }
     @media (max-width: 700px) {
-      .grid {
-        grid-template-columns: 1fr;
+      .topbar {
+        flex-direction: column;
+        align-items: flex-start;
       }
-      header {
-        padding: 2.5rem 1.25rem 1.5rem;
+      nav ul {
+        flex-wrap: wrap;
       }
       main {
         padding: 1.5rem 1.25rem 2rem;
@@ -117,12 +185,29 @@
 </head>
 <body>
   <header>
-    <h1>LES ANIMALS</h1>
-    <h2>Ingénierie culturelle · Projets européens · Création audiovisuelle</h2>
-    <p>
-      Accompagnement des collectivités, lieux culturels et collectifs d’artistes dans la conception,
-      le financement et la mise en œuvre de projets à fort impact social et artistique.
-    </p>
+    <div class="topbar">
+      <div class="brand">
+        <div class="logo-mark" aria-hidden="true"></div>
+        <div>
+          <div class="logo-text-main">LES ANIMALS</div>
+          <div class="logo-text-sub">Ingénierie culturelle & projets européens</div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="mood.html">MOOD</a></li>
+          <li><a href="partenaires.html">Partenaires</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-text">
+      <h2>Accompagnement des structures culturelles, collectivités et réseaux artistiques</h2>
+      <p>
+        Conception, financement et mise en œuvre de projets à fort impact social et artistique :
+        ingénierie culturelle, montage européen et création audiovisuelle.
+      </p>
+    </div>
   </header>
 
   <main>
@@ -180,6 +265,9 @@
         <li>Déploiement en installations lumineuses ou écrans</li>
         <li>Adaptation sur mesure pour contextes locaux et européens</li>
       </ul>
+      <p>
+        <a href="mood.html">En savoir plus sur MOOD →</a>
+      </p>
     </section>
 
     <section>
@@ -187,8 +275,7 @@
       <p>
         Les Animals est porté par Hédi Abidi, auteur-réalisateur et directeur artistique, avec une expérience
         de plus de dix ans dans la presse, l’audiovisuel et la direction de lieu culturel (centre d’art contemporain
-        et tiers-lieu à La Réunion). Cette expérience s’appuie sur un travail de terrain avec les habitants,
-        les institutions et les réseaux d’artistes.
+        et tiers-lieu à La Réunion).
       </p>
       <p>
         En 2025–2026, Les Animals développe notamment le projet MOOD, des dispositifs d’écriture collective,
@@ -198,9 +285,7 @@
 
     <section class="contact">
       <h3>Contact</h3>
-      <p>
-        Pour un échange, une étude de projet ou une demande de devis :
-      </p>
+      <p>Pour un échange, une étude de projet ou une demande de devis :</p>
       <p>
         Email : <a href="mailto:contact@les-animals.fr">contact@les-animals.fr</a><br>
         (remplace par ton vrai mail)
