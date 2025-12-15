@@ -6,178 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Les Animals accompagne les structures culturelles, collectivités et réseaux artistiques dans le montage de projets, l'ingénierie européenne et la production d'œuvres hybrides.">
   <link rel="stylesheet" href="assets/style.css">
-
-    header {
-      padding: 1.2rem 1.5rem 1.5rem;
-      border-bottom: 1px solid #333;
-    }
-    .topbar {
-      max-width: 900px;
-      margin: 0 auto 1rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-    }
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-    }
-    .logo-mark {
-      width: 32px;
-      height: 32px;
-      border-radius: 999px;
-      border: 1px solid #f5f5f5;
-      position: relative;
-      overflow: hidden;
-    }
-    .logo-mark::before,
-    .logo-mark::after {
-      content: "";
-      position: absolute;
-      width: 60%;
-      height: 60%;
-      border-radius: 50%;
-      border: 1px solid #f5f5f5;
-      top: -5px;
-    }
-    .logo-mark::before {
-      left: -4px;
-      transform: rotate(-15deg);
-    }
-    .logo-mark::after {
-      right: -4px;
-      transform: rotate(15deg);
-    }
-    .logo-text-main {
-      font-size: 1rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-    }
-    .logo-text-sub {
-      font-size: 0.7rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: #b0b0b0;
-    }
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      gap: 1rem;
-      font-size: 0.9rem;
-    }
-    nav a {
-      color: #f5f5f5;
-      text-decoration: none;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      font-size: 0.78rem;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .header-text {
-      text-align: center;
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 0 1.5rem 1.5rem;
-    }
-    .header-text h2 {
-      margin: 0.2rem 0 0.8rem;
-      font-weight: 400;
-      font-size: 1rem;
-      color: #d0d0d0;
-    }
-    .header-text p {
-      max-width: 650px;
-      margin: 0.5rem auto 0;
-      font-size: 0.95rem;
-      color: #c4c4c4;
-    }
-    main {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 2rem 1.5rem 3rem;
-    }
-    section {
-      margin-bottom: 2.5rem;
-      border-left: 1px solid #333;
-      padding-left: 1rem;
-    }
-    h3 {
-      text-transform: uppercase;
-      font-size: 0.9rem;
-      letter-spacing: 0.15em;
-      margin-bottom: 0.8rem;
-      color: #f0f0f0;
-    }
-    .tagline {
-      font-style: italic;
-      font-size: 0.9rem;
-      color: #b0b0b0;
-    }
-    ul {
-      list-style: none;
-      padding-left: 0;
-      margin: 0.5rem 0 0;
-    }
-    li {
-      margin-bottom: 0.4rem;
-      font-size: 0.95rem;
-    }
-    .highlight {
-      font-weight: 600;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.5rem;
-    }
-    .card {
-      border: 1px solid #333;
-      border-radius: 8px;
-      padding: 1rem;
-      background: #15151a;
-    }
-    .contact {
-      border-top: 1px solid #333;
-      padding-top: 1.5rem;
-      margin-top: 1.5rem;
-      font-size: 0.95rem;
-    }
-    a {
-      color: #9ad0ff;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      text-align: center;
-      font-size: 0.8rem;
-      padding: 1rem 1.5rem 2rem;
-      color: #777;
-      border-top: 1px solid #222;
-    }
-    @media (max-width: 700px) {
-      .topbar {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      nav ul {
-        flex-wrap: wrap;
-      }
-      main {
-        padding: 1.5rem 1.25rem 2rem;
-      }
-    }
-  </style>
 </head>
+
 <body>
-  <header>
+
+<header>
   <div class="container">
     <div class="topbar">
       <div class="brand">
@@ -199,117 +32,88 @@
   </div>
 </header>
 
-  <header>
-    <div class="topbar">
-      <div class="brand">
-        <div class="logo-mark" aria-hidden="true"></div>
-        <div>
-          <div class="logo-text-main">LES ANIMALS</div>
-          <div class="logo-text-sub">Ingénierie culturelle & projets européens</div>
-        </div>
-      </div>
-      <nav>
+<div class="container">
+  <div class="hero">
+    <h1>Ingénierie culturelle & projets européens</h1>
+    <p>
+      Les Animals accompagne les collectivités, lieux culturels et réseaux artistiques
+      sur la conception, le financement et la mise en œuvre de projets à fort impact.
+    </p>
+
+    <div class="actions">
+      <a class="btn" href="mood.html">Découvrir MOOD</a>
+      <a class="btn" href="partenaires.html">Voir les partenaires</a>
+      <a class="btn primary" href="mailto:contact@les-animals.fr">Contact</a>
+    </div>
+  </div>
+</div>
+
+<main class="container">
+  <section class="section">
+    <h2>Prestations</h2>
+    <p>De l’idée au livrable final, Les Animals structure des projets solides, finançables et réalisables.</p>
+
+    <div class="grid">
+      <div class="card">
+        <strong>Ingénierie culturelle & de territoire</strong>
         <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="mood.html">MOOD</a></li>
-          <li><a href="partenaires.html">Partenaires</a></li>
+          <li>Diagnostic culturel et analyse de contexte</li>
+          <li>Conception de projets de lieu, saisons, résidences</li>
+          <li>Stratégies de médiation et d’éducation artistique</li>
         </ul>
-      </nav>
-    </div>
-    <div class="header-text">
-      <h2>Accompagnement des structures culturelles, collectivités et réseaux artistiques</h2>
-      <p>
-        Conception, financement et mise en œuvre de projets à fort impact social et artistique :
-        ingénierie culturelle, montage européen et création audiovisuelle.
-      </p>
-    </div>
-  </header>
-
-  <main>
-    <section>
-      <h3>Ce que nous faisons</h3>
-      <p class="tagline">
-        De l’idée au livrable final, Les Animals structure des projets solides, finançables et réalisables.
-      </p>
-      <div class="grid">
-        <div class="card">
-          <p class="highlight">Ingénierie culturelle & de territoire</p>
-          <ul>
-            <li>Diagnostic culturel et analyse de contexte</li>
-            <li>Conception de projets de lieu, saisons, résidences</li>
-            <li>Stratégies de médiation et d’éducation artistique</li>
-          </ul>
-        </div>
-        <div class="card">
-          <p class="highlight">Projets européens & financements</p>
-          <ul>
-            <li>Montage de dossiers Erasmus+ et Europe Créative</li>
-            <li>Structuration budgétaire et plan de cofinancement</li>
-            <li>Suivi, reporting et respect des livrables</li>
-          </ul>
-        </div>
-        <div class="card">
-          <p class="highlight">Production & installation d’œuvres</p>
-          <ul>
-            <li>Conception d’installations participatives et numériques</li>
-            <li>Production documentaire et écriture de projets</li>
-            <li>Coordination technique avec artistes et partenaires</li>
-          </ul>
-        </div>
-        <div class="card">
-          <p class="highlight">Conseil & accompagnement</p>
-          <ul>
-            <li>Accompagnement de tiers-lieux et structures hybrides</li>
-            <li>Conseil en stratégie culturelle et artistique</li>
-            <li>Formalisation de démarches et d’outils méthodologiques</li>
-          </ul>
-        </div>
       </div>
-    </section>
 
-    <section>
-      <h3>Projet phare · MOOD</h3>
-      <p>
-        <span class="highlight">MOOD</span> est un dispositif artistique et numérique qui cartographie les émotions
-        dans l’espace public à partir de questionnaires poétiques. Les participants répondent à des questions courtes ;
-        leurs réponses génèrent une couleur, un halo lumineux ou une image, intégrés à une œuvre collective visible
-        dans la ville et en ligne.
-      </p>
-      <ul>
-        <li>Outil participatif pour villes, festivals, tiers-lieux</li>
-        <li>Déploiement en installations lumineuses ou écrans</li>
-        <li>Adaptation sur mesure pour contextes locaux et européens</li>
-      </ul>
-      <p>
-        <a href="mood.html">En savoir plus sur MOOD →</a>
-      </p>
-    </section>
+      <div class="card">
+        <strong>Projets européens & financements</strong>
+        <ul>
+          <li>Montage de dossiers Erasmus+ et Europe Créative</li>
+          <li>Structuration budgétaire et plan de cofinancement</li>
+          <li>Suivi, reporting et respect des livrables</li>
+        </ul>
+      </div>
 
-    <section>
-      <h3>À propos</h3>
-      <p>
-        Les Animals est porté par Hédi Abidi, auteur-réalisateur et directeur artistique, avec une expérience
-        de plus de dix ans dans la presse, l’audiovisuel et la direction de lieu culturel (centre d’art contemporain
-        et tiers-lieu à La Réunion).
-      </p>
-      <p>
-        En 2025–2026, Les Animals développe notamment le projet MOOD, des dispositifs d’écriture collective,
-        et un accompagnement d’acteurs culturels et éducatifs sur des projets européens.
-      </p>
-    </section>
+      <div class="card">
+        <strong>Production & installation d’œuvres</strong>
+        <ul>
+          <li>Conception d’installations participatives et numériques</li>
+          <li>Production documentaire et écriture de projets</li>
+          <li>Coordination technique avec artistes et partenaires</li>
+        </ul>
+      </div>
 
-    <section class="contact">
-      <h3>Contact</h3>
-      <p>Pour un échange, une étude de projet ou une demande de devis :</p>
-      <p>
-        Email : <a href="mailto:contact@les-animals.fr">contact@les-animals.fr</a><br>
-        (remplace par ton vrai mail)
-      </p>
-    </section>
-  </main>
+      <div class="card">
+        <strong>Conseil & accompagnement</strong>
+        <ul>
+          <li>Accompagnement de tiers-lieux et structures hybrides</li>
+          <li>Conseil en stratégie culturelle et artistique</li>
+          <li>Formalisation de démarches et d’outils méthodologiques</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-  <footer>
+  <section class="section">
+    <h2>Projet phare · MOOD</h2>
+    <p>
+      <strong>MOOD</strong> cartographie les émotions dans l’espace public à partir de questionnaires poétiques.
+      Les réponses génèrent une couleur, un halo lumineux ou une image, intégrés à une œuvre collective
+      visible dans la ville et en ligne.
+    </p>
+    <p><a href="mood.html">En savoir plus sur MOOD →</a></p>
+  </section>
+
+  <section class="section">
+    <h2>Contact</h2>
+    <p>Pour un échange, une étude de projet ou une demande de devis :</p>
+    <p><a href="mailto:contact@les-animals.fr">contact@les-animals.fr</a></p>
+  </section>
+</main>
+
+<div class="footer">
+  <div class="container">
     © Les Animals – Ingénierie culturelle & projets européens
-  </footer>
+  </div>
+</div>
+
 </body>
 </html>
