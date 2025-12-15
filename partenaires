@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Partenaires – Les Animals</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Partenaires de Les Animals : structures culturelles, collectivités, réseaux européens.">
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #0e0e10;
+      color: #f5f5f5;
+    }
+    header {
+      padding: 1.2rem 1.5rem 1.5rem;
+      border-bottom: 1px solid #333;
+    }
+    .topbar {
+      max-width: 900px;
+      margin: 0 auto 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    .logo-mark {
+      width: 32px;
+      height: 32px;
+      border-radius: 999px;
+      border: 1px solid #f5f5f5;
+      position: relative;
+      overflow: hidden;
+    }
+    .logo-mark::before,
+    .logo-mark::after {
+      content: "";
+      position: absolute;
+      width: 60%;
+      height: 60%;
+      border-radius: 50%;
+      border: 1px solid #f5f5f5;
+      top: -5px;
+    }
+    .logo-mark::before {
+      left: -4px;
+      transform: rotate(-15deg);
+    }
+    .logo-mark::after {
+      right: -4px;
+      transform: rotate(15deg);
+    }
+    .logo-text-main {
+      font-size: 1rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+    .logo-text-sub {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #b0b0b0;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 1rem;
+      font-size: 0.9rem;
+    }
+    nav a {
+      color: #f5f5f5;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.78rem;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .header-text {
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 1.5rem 1.5rem;
+    }
+    .header-text h1 {
+      font-size: 1.4rem;
+      margin-bottom: 0.4rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+    .header-text p {
+      max-width: 650px;
+      margin: 0.5rem auto 0;
+      font-size: 0.95rem;
+      color: #c4c4c4;
+    }
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 3rem;
+    }
+    section {
+      margin-bottom: 2.5rem;
+      border-left: 1px solid #333;
+      padding-left: 1rem;
+    }
+    h2 {
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      letter-spacing: 0.15em;
+      margin-bottom: 0.8rem;
+      color: #f0f0f0;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+    .card {
+      border: 1px solid #333;
+      border-radius: 8px;
+      padding: 1rem;
+      background: #15151a;
+      font-size: 0.95rem;
+    }
+    .card-title {
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.8rem;
+      color: #e5e5e5;
+    }
+    .logos-note {
+      font-size: 0.85rem;
+      color: #b0b0b0;
+      margin-top: 0.5rem;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      padding: 1rem 1.5rem 2rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+    @media (max-width: 700px) {
+      .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav ul {
+        flex-wrap: wrap;
+      }
+      .grid {
+        grid-template-columns: 1fr;
+      }
+      main {
+        padding: 1.5rem 1.25rem 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <div class="brand">
+        <div class="logo-mark" aria-hidden="true"></div>
+        <div>
+          <div class="logo-text-main">LES ANIMALS</div>
+          <div class="logo-text-sub">Ingénierie culturelle & projets européens</div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="mood.html">MOOD</a></li>
+          <li><a href="partenaires.html">Partenaires</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-text">
+      <h1>Partenaires</h1>
+      <p>
+        Les Animals travaille avec des acteurs culturels, des collectivités et des réseaux européens
+        qui partagent une attention aux publics, à l’expérimentation et aux droits culturels.
+      </p>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Réseaux et collaborations</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="card-title">Mister Freeze</div>
+          <p>
+            Plateforme de diffusion des cultures urbaines basée à Toulouse. Collaboration autour
+            d’installations in situ, de projets participatifs et du déploiement de dispositifs hybrides
+            comme MOOD dans le cadre d’expositions et de temps forts.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-title">Collectivités & institutions</div>
+          <p>
+            Coopérations avec des villes, intercommunalités, services culturels et dispositifs de politique
+            de la ville, pour des projets d’espace public, de médiation et d’éducation artistique et culturelle.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-title">Réseaux européens</div>
+          <p>
+            Construction de partenariats dans le cadre de projets Erasmus+ et Europe Créative autour de l’écriture,
+            du numérique et de l’art dans l’espace public, avec des structures culturelles et sociales en Europe.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-title">Associations & tiers-lieux</div>
+          <p>
+            Accompagnement de tiers-lieux, collectifs d’artistes et associations d’éducation populaire
+            sur la conception de projets, la recherche de financements et la mise en œuvre d’outils participatifs.
+          </p>
+        </div>
+      </div>
+      <p class="logos-note">
+        Les logos des partenaires (Mister Freeze, collectivités, Europe Créative, Erasmus+, etc.)
+        peuvent être intégrés sur cette page en fonction des conventions de communication.
+      </p>
+    </section>
+
+    <section>
+      <h2>Devenir partenaire</h2>
+      <p>
+        Les Animals développe des collaborations avec des structures culturelles, éducatives et sociales
+        souhaitant expérimenter de nouveaux formats de participation, d’écriture collective
+        et de visualisation sensible des territoires.
+      </p>
+      <p>
+        Pour envisager un partenariat ou recevoir un dossier détaillé :
+        <a href="mailto:contact@les-animals.fr">contact@les-animals.fr</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © Les Animals – Partenaires
+  </footer>
+</body>
+</html>
